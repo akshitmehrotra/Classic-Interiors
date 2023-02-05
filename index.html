@@ -30,35 +30,109 @@
             <img src="Hamburger_icon.svg.png" height="" width="20" />
           </div>
         </header>
+        <div></div>
+        <div></div>
         <nav>
           <ul class="nav-ul hide-ul">
             <li><a class="nav-link" href="#">Home</a></li>
-            <li><a class="nav-link" href="#">News</a></li>
-            <li><a class="nav-link" href="#">Contact</a></li>
-            <li><a class="nav-link" href="#">About</a></li>
+            <li><a class="nav-link" href="#">About Us</a></li>
+            <li><a class="nav-link" href="#">Project</a></li>
+            <li><a class="nav-link" href="#">Clients</a></li>
+            <li><a class="nav-link" href="#">Products</a></li>
+            <li><a class="nav-link" href="#">Contact Us</a></li>
           </ul>
         </nav>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      function isScrolledIntoView(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return elemBottom <= docViewBottom && elemTop >= docViewTop;
+      }
+
+      $(window).scroll(function () {
+        if (isScrolledIntoView(".welcomee-text") === true) {
+          $(".welcomee-text").addClass("in-view");
+        }
+      });
+    </script>
+
+    <!-- Main Image -->
     <div class="container">
       <div alt="Snow" class="main-image"></div>
       <div class="centered">First thing we built is trust.</div>
     </div>
 
-    <div class="container">
+    <!-- Countdown -->
+    <div class="container" id="countdown">
       <div class="centered-num">
         <div></div>
+        <div></div>
         <div class="centered-num-2">
-          <div class="value" akhi="200">0</div>
-          <div> + Projects <br> Completed </div>
+          <div class="value1" akhi="200">0</div>
+          <div class="font-value">
+            <div class="plus">+</div>
+            <div class="font-value-child">Projects <br />&nbsp; Completed</div>
+          </div>
         </div>
         <div class="centered-num-2">
-          <div class="value" akhi="100">0</div>
-          <div> + Happy <br> Customers</div>
+          <div class="value2" akhi="180">0</div>
+          <div class="plus">+</div>
+          <div class="font-value-child">Happy <br />&nbsp;&nbsp;Customers</div>
         </div>
+        <div></div>
         <div></div>
       </div>
     </div>
+
+    <!-- Welcome -->
+    <div class="container">
+      <div class="welcomee" id="welcomee">
+        <div class="welcomee-comp">
+          <div class="welcomee-image">
+            <div class="welcomee-image-child"></div>
+          </div>
+          <div class="welcomee-text" id="welcomee-text">
+            <div class="welcomee-heading">
+              <div class="welcomee-heading-child">Welcome</div>
+              <div class="welcomee-heading-est">EST. 1996</div>
+              <div class="welcomee-heading-underline">
+                ______________________________
+              </div>
+            </div>
+            <div>
+              <p class="welcomee-p">
+                Classic Interiors is a full service space planning, interior
+                designing and contract firm. Classic Interiors is a midsized
+                firm specializing in, Showrooms, Residential, Offices,
+                Educational Institutes ,ATM’s and Modular kitchens with emphasis
+                on renovation, adoptive reuse and corporate interiors. Classic
+                Interiors is a partnership firm. Rajiv Chopra and Sameer
+                Mehrotra are two partners who have done 2 years Diploma courses
+                in interior designing.
+              </p>
+              <p class="welcomee-p">
+                We would consider it our privilege to offer professional
+                consultancy vis a vis Interior designing and supervision. We
+                would be highly obliged for an early reply so that we could
+                arrange for a brief presentation of our works or provide more
+                information and feedback. We look forward to the opportunity of
+                participating in the growth process of your company of
+                professional design colleagues.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
