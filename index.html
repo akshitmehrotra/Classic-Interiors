@@ -16,6 +16,12 @@
       type="text/css"
       href="//fonts.googleapis.com/css?family=Tinos"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div id="nav-background">
@@ -27,11 +33,9 @@
             /></a>
           </h1>
           <div id="nav-menu-button">
-            <img src="Hamburger_icon.svg.png" height="" width="20" />
+            <img src="hb.png" height="" width="20" />
           </div>
         </header>
-        <div></div>
-        <div></div>
         <nav>
           <ul class="nav-ul hide-ul">
             <li><a class="nav-link" href="#">Home</a></li>
@@ -39,30 +43,13 @@
             <li><a class="nav-link" href="#">Project</a></li>
             <li><a class="nav-link" href="#">Clients</a></li>
             <li><a class="nav-link" href="#">Products</a></li>
-            <li><a class="nav-link" href="#">Contact Us</a></li>
+            <li><a class="nav-link" href="#" id="contact">Contact Us</a></li>
           </ul>
         </nav>
       </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script>
-      function isScrolledIntoView(elem) {
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
-
-        var elemTop = $(elem).offset().top;
-        var elemBottom = elemTop + $(elem).height();
-
-        return elemBottom <= docViewBottom && elemTop >= docViewTop;
-      }
-
-      $(window).scroll(function () {
-        if (isScrolledIntoView(".welcomee-text") === true) {
-          $(".welcomee-text").addClass("in-view");
-        }
-      });
-    </script>
+    <script defer src="app.js"></script>
 
     <!-- Main Image -->
     <div class="container">
@@ -99,7 +86,7 @@
           <div class="welcomee-image">
             <div class="welcomee-image-child"></div>
           </div>
-          <div class="welcomee-text" id="welcomee-text">
+          <div class="welcomee-text" id="welcomee-text" data-aos="fade-left">
             <div class="welcomee-heading">
               <div class="welcomee-heading-child">Welcome</div>
               <div class="welcomee-heading-est">EST. 1996</div>
@@ -133,6 +120,54 @@
       </div>
     </div>
 
+    <!-- Projects Heading-->
+    <div class="container">
+      <div class="projects-heading">
+        <div class="projects-heading-child">
+          <div class="projects-heading-child-child">Projects</div>
+          <div class="projects-heading-underline">
+            ______________________________
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects-parent">
+      <div><button class="button" onclick="SwapDivsWithClick()">></button></div>
+      <div class="projects-list" id="projects-list"  data-aos="fade-right">
+        <div class="projects-list-more">More Projects</div>
+          <div class="project-list-element">3M</div>
+          <div class="project-list-element">3M</div>
+          <div class="project-list-element">3M</div>
+          <div class="project-list-element">3M</div>
+          <div class="project-list-element">3M</div>
+          <div class="project-list-element">3M</div>
+          <div class="project-list-element">3M</div>
+        <div class="view-more">view more</div>
+      </div>
+      <div class="projects" id="projects1" data-aos="fade-up">
+        <div class="projects-container projects11" id="projects11">HI</div>
+        <div class="projects-container projects12" id="projects12">HELLO</div>
+      </div>
+      <div class="projects" data-aos="fade-up">
+        <div class="projects-container projects21" id="projects21">BYE</div>
+        <div class="projects-container projects22" id="projects22">BI</div>
+      </div>
+      <div class="projects" data-aos="fade-up">
+        <div class="projects-container projects31" id="projects31">Kane</div>
+        <div class="projects-container projects32" id="projects32">Undertaker</div>
+      </div>
+    </div>
+
+    <!-- script -->
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
   </body>
 </html>

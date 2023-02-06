@@ -79,20 +79,20 @@ counters.forEach( counter => {
     
   }
 
-  document.getElementById("countdown").onmouseover = function() {mouseOver()};
-  function mouseOver() {
-    document.getElementById("welcomee-text").style.visibility = "visible";
-    document.getElementById("welcomee-text").style.opacity = 1;
-    document.getElementById("welcomee-text").style.transition = "opacity 2s linear";
-    console.log("hi")
-  }
+  // document.getElementById("countdown").onmouseover = function() {mouseOver()};
+  // function mouseOver() {
+  //   document.getElementById("welcomee-text").style.visibility = "visible";
+  //   document.getElementById("welcomee-text").style.opacity = 1;
+  //   document.getElementById("welcomee-text").style.transition = "opacity 1s linear";
+  //   console.log("hi")
+  // }
 
-  document.getElementById("welcomee").onmouseover = function() {mouseOver()};
-  function mouseOver() {
-    document.getElementById("welcomee-text").style.visibility = "visible";
-    document.getElementById("welcomee-text").style.opacity = 1;
-    document.getElementById("welcomee-text").style.transition = "opacity 2s linear";
-  }
+  // document.getElementById("welcomee").onmouseover = function() {mouseOver()};
+  // function mouseOver() {
+  //   document.getElementById("welcomee-text").style.visibility = "visible";
+  //   document.getElementById("welcomee-text").style.opacity = 1;
+  //   document.getElementById("welcomee-text").style.transition = "opacity 1s linear";
+  // }
 
   document.getElementById("countdown").onscroll = function() {myFunction()};
 
@@ -101,5 +101,20 @@ function myFunction() {
   document.getElementById("welcomee-text").style.visibility = "visible";
   document.getElementById("welcomee-text").style.opacity = 1;
   document.getElementById("welcomee-text").style.transition = "opacity 2s linear";
+  document.getElementById("welcomee-text").style.filer = "blur(5px)";
+  document.getElementById("welcomee-text").style.transition = "opacity 2s linear";
 }
+
+function fade(){
+  document.getElementById("projects1").style.visibility = "hidden";
+}
+
+function SwapDivsWithClick()
+{
+  document.getElementById("projects1").style.display = "none";
+  document.getElementById("projects-list").style.display = "block";
+  document.getElementById("projects-list").style.transition = "opacity 2s linear";
+}
+
+
 
