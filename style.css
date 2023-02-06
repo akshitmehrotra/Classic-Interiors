@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
   font-family: "Cambria";
+  /* overflow-x: hidden ; */
 }
 
 body {
   background-color: #1b1a1a;
   color: white;
+  overflow-x: hidden;
 }
 
 .main-image {
@@ -17,12 +19,12 @@ body {
   opacity: 60%;
 }
 
-
 /* Main image */
 .container {
   position: relative;
   text-align: center;
   color: white;
+  width: 100vw;
 }
 
 .centered {
@@ -35,59 +37,59 @@ body {
 }
 /* Main image end*/
 
-
-
 /* Countdown Desktop*/
 @media screen and (min-width: 701px) {
-.centered-num {
-  background-image: url("image7.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 20vh;
-  width: 100vw;
-  font-family: "Abril Fatface";
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  overflow: auto;
-}
+  .centered-num {
+    background-image: url("image7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100vw;
+    font-family: "Abril Fatface";
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+  }
 
-.centered-num-2 {
-  font-family: "Abril Fatface";
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  .centered-num-2 {
+    font-family: "Abril Fatface";
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-.value ,.value1,.value2{
-  font-size: 64px;
-  display: block;
-  font-weight: bold;
-  color: #fff;
-  font-family: "Abril Fatface";
-}
+  .value,
+  .value1,
+  .value2 {
+    font-size: 64px;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Abril Fatface";
+  }
 
-.font-value{
-  font-family: "Abril Fatface";
-  display: flex;
-  justify-content:safe;
-  align-items: center;
-}
+  .font-value {
+    font-family: "Abril Fatface";
+    display: flex;
+    justify-content: safe;
+    align-items: center;
+  }
 
-.font-value-child{
-  font-family: "Abril Fatface";
-  font-size: 24px;
-  justify-content:safe;
-}
+  .font-value-child {
+    font-family: "Abril Fatface";
+    font-size: 24px;
+    justify-content: safe;
+  }
 
-.plus{
-  font-size: 64px;
-  font-family: "Abril Fatface";
-}
+  .plus {
+    font-size: 64px;
+    font-family: "Abril Fatface";
+  }
 
-#nav-container > nav > ul {
-  list-style-type: none;
-}
+  #nav-container > nav > ul {
+    list-style-type: none;
+  }
 }
 /* Countdown Desktop end*/
 
@@ -105,122 +107,121 @@ body {
     align-items: center;
     overflow: auto;
   }
-  
+
   .centered-num-2 {
     font-family: "Abril Fatface";
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  
-  .value ,.value1,.value2{
+
+  .value,
+  .value1,
+  .value2 {
     font-size: 32px;
     display: block;
     font-weight: bold;
     color: #fff;
     font-family: "Abril Fatface";
   }
-  
-  .font-value{
+
+  .font-value {
     font-family: "Abril Fatface";
     display: flex;
-    justify-content:safe;
+    justify-content: safe;
     align-items: center;
   }
-  
-  .font-value-child{
+
+  .font-value-child {
     font-family: "Abril Fatface";
     font-size: 12px;
-    justify-content:safe;
+    justify-content: safe;
   }
-  
-  .plus{
+
+  .plus {
     font-size: 32px;
     font-family: "Abril Fatface";
   }
-  
+
   #nav-container > nav > ul {
     list-style-type: none;
   }
-  }
-  /* Countdown Mobile end*/
-
+}
+/* Countdown Mobile end*/
 
 /* NAVIGATION */
 @media screen and (min-width: 701px) {
-#nav-background {
-  position: fixed;
-  top: 0;
-  z-index: 9000;
-  width: 100vw;
-  background-color: black;
-  opacity: 80%;
-  /*
+  #nav-background {
+    position: fixed;
+    top: 0;
+    z-index: 9000;
+    width: 100vw;
+    background-color: black;
+    opacity: 80%;
+    /*
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
   */
-}
+  }
 
-#nav-container {
-  display: flex;
-  margin: 0 auto;
-  justify-content:flex-start;
-  height: 15vh;
-}
+  #nav-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-start;
+    height: 15vh;
+  }
 
-#nav-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2vw;
-  margin-right: 15vw;
-}
+  #nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+    margin-right: 15vw;
+  }
 
-#nav-logo {
-  text-decoration: none;
-  background-color: black;
-}
+  #nav-logo {
+    text-decoration: none;
+    background-color: black;
+  }
 
-.nav-ul {
-  display: flex;
-  max-width: 100000px;
-}
+  .nav-ul {
+    display: flex;
+    max-width: 100000px;
+  }
 
-.nav-ul > li {
-  display: flex;
-  height: 15vh;
-  align-items: center;
-  margin-left: 1vw;
-}
+  .nav-ul > li {
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    margin-left: 1vw;
+  }
 
-#contact{
-  margin-left: 15vw;
-}
+  #contact {
+    margin-left: 15vw;
+  }
 
-.nav-link {
-  flex: 1;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: 200ms;
-  font-family: "Calibri";
-  font-size: 16px;
-}
+  .nav-link {
+    flex: 1;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 200ms;
+    font-family: "Calibri";
+    font-size: 16px;
+  }
 
-.nav-link:hover {
-  background-color: #f1f1f1;
-}
+  .nav-link:hover {
+    background-color: #f1f1f1;
+  }
 
-.active-link {
-  background-color: #f1f1f1;
-}
+  .active-link {
+    background-color: #f1f1f1;
+  }
 }
 /* END NAVIGATION */
 
-
 /* MOBILE MENU */
 @media screen and (max-width: 700px) {
-
   #nav-container {
     flex-direction: column;
     text-align: center;
@@ -262,36 +263,35 @@ body {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     */
   }
-  
+
   #nav-container {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     height: 7.5vh;
   }
-  
+
   #nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   #nav-logo {
     text-decoration: none;
     background-color: black;
   }
-  
+
   .nav-ul {
     display: flex;
     max-width: 100000px;
   }
-  
+
   .nav-ul > li {
     display: flex;
     height: 5vh;
     align-items: center;
   }
-  
-  
+
   .nav-link {
     flex: 1;
     color: white;
@@ -303,21 +303,19 @@ body {
     font-size: 16px;
     background-color: black;
   }
-  
+
   .nav-link:hover {
     background-color: #f1f1f1;
   }
-  
+
   .active-link {
     background-color: #f1f1f1;
   }
-  
 }
 /* END MOBILE MENU */
 
 /* DESKTOP MENU */
 @media screen and (min-width: 701px) {
-
   #nav-menu-button {
     display: none;
   }
@@ -348,7 +346,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
+
   .welcomee-comp {
     align-content: center;
     background-color: #232222;
@@ -356,11 +354,11 @@ body {
     width: 90vw;
     border-radius: 50px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
   }
-  
-  .welcomee-image-child{
+
+  .welcomee-image-child {
     background-image: url("image15.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -368,24 +366,23 @@ body {
     width: 65vh;
   }
 
-  .welcomee-text{
+  .welcomee-text {
     height: 60vh;
     width: 80vh;
-    
   }
 
-  .welcomee-heading{
+  .welcomee-heading {
     text-align: center;
   }
 
-  .welcomee-heading-child{
+  .welcomee-heading-child {
     font-size: 64px;
     font-weight: 400;
     color: #fff;
     font-family: "Abril Fatface";
   }
 
-  .welcomee-heading-est{
+  .welcomee-heading-est {
     font-size: 24px;
     font-weight: 400;
     color: #fff;
@@ -393,540 +390,537 @@ body {
     line-height: 0.5px;
   }
 
-  .welcomee-heading-underline{
+  .welcomee-heading-underline {
     font-size: 24px;
     font-weight: 400;
     color: #fff;
-    font-family: 'Cambria';
+    font-family: "Cambria";
     margin-bottom: 20px;
   }
 
-  .welcomee-p{
-    font-family: 'Times New Roman';
+  .welcomee-p {
+    font-family: "Times New Roman";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     text-align: justify;
     margin-bottom: 20px;
   }
-  
+}
+/* Welcome end*/
+
+/* Welcome Mobile*/
+@media screen and (max-width: 800px) {
+  .welcomee {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+    width: 100vw;
+    font-family: "Abril Fatface";
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
-  /* Welcome end*/
-  
-  /* Welcome Mobile*/
-  @media screen and (max-width: 800px) {
-    .welcomee {
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 120vh;
-      width: 100vw;
-      font-family: "Abril Fatface";
-      position: relative;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-    
-    .welcomee-comp {
-      align-content: center;
-      background-color: #232222;
-      height: 100vh;
-      width: 90vw;
-      border-radius: 50px;
-      display: flex;
-      justify-content:center;
-      align-items: center;
-      flex-direction: column;
-    }
-    
-    .welcomee-image-child{
-      background-image: url("image15.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 30vh;
-      width: 30vh;
-    }
-  
-    .welcomee-text{
-      height: 30vh;
-      width: 40vh;
-      transition:all 1s;
-      opacity: 1;
-      transition: visibility 0s 2s, opacity 2s linear;
-    }
-  
-    .welcomee-text.in-view{
-      height: 30vh;
-      width: 40vh;
-      opacity: 1;
-      visibility: visible;
-      transition: opacity 1s linear;
-    }
-  
-    .welcomee-heading{
-      text-align: center;
-    }
-  
-    .welcomee-heading-child{
-      font-size: 32px;
-      font-weight: 400;
-      color: #fff;
-      font-family: "Abril Fatface";
-    }
-  
-    .welcomee-heading-est{
-      font-size: 12px;
-      font-weight: 400;
-      color: #fff;
-      font-family: "Abril Fatface";
-      line-height: 0.5px;
-    }
-  
-    .welcomee-heading-underline{
-      font-size: 12px;
-      font-weight: 400;
-      color: #fff;
-      font-family: 'Cambria';
-      margin-bottom: 20px;
-    }
-  
-    .welcomee-p{
-      font-family: 'Times New Roman';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      text-align: justify;
-      margin-bottom: 20px;
-    }
-    }
-    /* Welcome Mobile end*/
- 
 
-
-  /* Projects Heading*/
-  @media screen and (min-width: 701px) {
-    .projects-heading{
-      background-image: url("image7.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 20vh;
-      width: 100vw;
-      font-family: "Abril Fatface";
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: auto;
-    }
-    
-    .projects-heading-child{
-      font-size: 64px;
-      font-weight: 400;
-      color: #fff;
-      font-family: "Abril Fatface";
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .projects-heading-child-child{
-      font-size: 64px;
-      font-weight: 400;
-      color: #fff;
-      font-family: "Abril Fatface";
-      line-height: 0.5px;
-      margin-bottom: 30px;
-    }
-
-    .projects-heading-underline{
-      font-size: 24px;
-      font-weight: 400;
-      color: #fff;
-      font-family: 'Cambria';
-      
-    }
+  .welcomee-comp {
+    align-content: center;
+    background-color: #232222;
+    height: 100vh;
+    width: 90vw;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
   }
-  /* Projects Heading End*/
 
-  /* Projects Heading Mobile */
-  @media screen and (max-width: 700px) {
-    .projects-heading{
-      background-image: url("image7.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 20vh;
-      width: 100vw;
-      font-family: "Abril Fatface";
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: auto;
-    }
-    
-    .projects-heading-child{
-      font-size: 32px;
-      font-weight: 400;
-      color: #fff;
-      font-family: "Abril Fatface";
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .projects-heading-child-child{
-      font-size: 32px;
-      font-weight: 400;
-      color: #fff;
-      font-family: "Abril Fatface";
-      line-height: 0.5px;
-      margin-bottom: 15px;
-    }
-
-    .projects-heading-underline{
-      font-size: 12px;
-      font-weight: 400;
-      color: #fff;
-      font-family: 'Cambria';
-      
-    }
+  .welcomee-image-child {
+    background-image: url("image15.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 30vh;
+    margin-top: 10vh;
   }
-  /* Projects Heading Mobile End*/
 
-
-
-
-  /* Projects */
-  @media screen and (min-width: 701px) {
-    .projects-parent{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 100px;
-    }
-    .projects{
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-    }
-
-    .projects-container{
-      background-image: url("downloafw.jpg");
-      height: 45vh;
-      width: 54vh;
-      margin-top: 10vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 20px;
-      letter-spacing: 2px;
-      font-family: "Poppins";
-    }
-
-    .projects-container:hover{
-      height: 45vh;
-      width: 54vh;
-      transform: scale(1.05);
-      opacity: 70%;
-      margin-top: 10vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 20px;
-      letter-spacing: 2px;
-      font-family: "Poppins";
-      font-weight: bold;
-    }
-
-    .projects11{
-      background-image: url("downloafw.jpg");
-    }
-
-    .projects12{
-      background-image: url("downloafw.jpg");
-    }
-
-    .projects21{
-      background-image: url("downloafw.jpg");
-    }
-
-    .projects22{
-      background-image: url("downloafw.jpg");
-    }
-
-    .projects31{
-      background-image: url("downloafw.jpg");
-    }
-
-    .projects32{
-      background-image: url("downloafw.jpg");
-    }
-
-    #projects-list{
-      background-image: url("Rectangle 22.png");
-      height: 90vh;
-      width: 90vw;
-      margin-top: 10vh;
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: none;
-      transition: height .4s ease-in-out;
-    }
-
-    .projects-list-more{
-      font-size: 32px;
-      letter-spacing: 1px;
-      font-family: "Poppins";
-      color: black;
-      text-align: center;
-      margin-top: 30px;
-      margin-bottom: 60px;
-    }
-
-    .project-list-element{
-      font-size: 20px;
-      letter-spacing: 1px;
-      font-family: "Poppins";
-      color: black;
-      text-align: center;
-      margin-bottom: 15px;
-    }
-
-    .view-more{
-      font-size: 15px;
-      letter-spacing: 1px;
-      text-decoration: underline;
-      font-family: "Poppins";
-      color: black;
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    .projects-list-list{
-      list-style-type: none;
-    }
-
-    .projects-container-last{
-      margin-left: 0;
-    }
-
-    .projects-container-last{
-      margin-right: 0;
-    }
-
-    .button {
-      background-color: white;
-      border: none;
-      color: black;
-      height: 55px;
-      width: 55px;
-      border-radius: 100%;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 40px;
-      margin: 4px 2px;
-    }
-
-    .button:hover{
-      background-color: white;
-      opacity: 80%;
-      border: none;
-      color: black;
-      height: 60px;
-      width: 60px;
-      border-radius: 100%;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 40px;
-      margin: 4px 2px;
-    }
-
-    .button:active{
-      background-color: white;
-      opacity: 80%;
-      border: none;
-      color: black;
-      height: 60px;
-      width: 60px;
-      border-radius: 100%;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 40px;
-      margin: 4px 2px;
-    }
+  .welcomee-text {
+    margin-top: 5vh;
+    height: 30vh;
+    width: 40vh;
+    transition: all 1s;
+    opacity: 1;
+    transition: visibility 0s 2s, opacity 2s linear;
   }
-  /* Projects End*/
 
-
-  /* Projects Mobile*/
-  @media screen and (max-width: 700px) {
-    .projects-parent{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 0px;
-      flex-flow: column;
-    }
-    .projects{
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-    }
-
-    .projects-container{
-      background-image: url("downloafw.jpg");
-      height: 22.5vh;
-      width: 27vh;
-      margin-top: 5vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 20px;
-      letter-spacing: 2px;
-      font-family: "Poppins";
-    }
-
-    .projects-container:hover{
-      height: 45vh;
-      width: 54vh;
-      transform: scale(1.05);
-      opacity: 70%;
-      margin-top: 5vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 20px;
-      letter-spacing: 2px;
-      font-family: "Poppins";
-      font-weight: bold;
-    }
-
-    .projects11{
-      background-image: url("downloafw.jpg");
-    }
-
-    .projects12{
-      background-image: url("downloafw.jpg");
-      
-    }
-
-    .projects21{
-      background-image: url("downloafw.jpg");
-    }
-
-    .projects22{
-      background-image: url("downloafw.jpg");
-    }
-
-    .projects31{
-      background-image: url("downloafw.jpg");
-    }
-
-    .projects32{
-      background-image: url("downloafw.jpg");
-    }
-
-    #projects-list{
-      background-image: url("Rectangle 22.png");
-      height: 70vh;
-      width: 100vw;
-      margin-top: 10vh;
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: none;
-      transition: height .4s ease-in-out;
-    }
-
-    .projects-list-more{
-      font-size: 32px;
-      letter-spacing: 1px;
-      font-family: "Poppins";
-      color: black;
-      text-align: center;
-      margin-top: 30px;
-      margin-bottom: 60px;
-    }
-
-    .project-list-element{
-      font-size: 20px;
-      letter-spacing: 1px;
-      font-family: "Poppins";
-      color: black;
-      text-align: center;
-      margin-bottom: 15px;
-    }
-
-    .view-more{
-      font-size: 15px;
-      letter-spacing: 1px;
-      text-decoration: underline;
-      font-family: "Poppins";
-      color: black;
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    .projects-list-list{
-      list-style-type: none;
-    }
-
-    .projects-container-last{
-      margin-left: 0;
-    }
-
-    .projects-container-last{
-      margin-right: 0;
-    }
-
-    .button {
-      background-color: white;
-      border: none;
-      color: black;
-      height: 55px;
-      width: 55px;
-      border-radius: 100%;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 40px;
-      margin: 4px 2px;
-    }
-
-    .button:hover{
-      background-color: white;
-      opacity: 80%;
-      border: none;
-      color: black;
-      height: 60px;
-      width: 60px;
-      border-radius: 100%;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 40px;
-      margin: 4px 2px;
-    }
-
-    .button:active{
-      background-color: white;
-      opacity: 80%;
-      border: none;
-      color: black;
-      height: 60px;
-      width: 60px;
-      border-radius: 100%;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 40px;
-      margin: 4px 2px;
-    }
+  .welcomee-text.in-view {
+    height: 30vh;
+    width: 40vh;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s linear;
   }
-  /* Projects Mobile End*/
+
+  .welcomee-heading {
+    text-align: center;
+  }
+
+  .welcomee-heading-child {
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Abril Fatface";
+  }
+
+  .welcomee-heading-est {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Abril Fatface";
+    line-height: 0.5px;
+  }
+
+  .welcomee-heading-underline {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Cambria";
+    margin-bottom: 20px;
+  }
+
+  .welcomee-p {
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+}
+/* Welcome Mobile end*/
+
+/* Projects Heading*/
+@media screen and (min-width: 701px) {
+  .projects-heading {
+    background-image: url("image7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100vw;
+    font-family: "Abril Fatface";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .projects-heading-child {
+    font-size: 64px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Abril Fatface";
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects-heading-child-child {
+    font-size: 64px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Abril Fatface";
+    line-height: 0.5px;
+    margin-bottom: 30px;
+  }
+
+  .projects-heading-underline {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Cambria";
+  }
+}
+/* Projects Heading End*/
+
+/* Projects Heading Mobile */
+@media screen and (max-width: 700px) {
+  .projects-heading {
+    background-image: url("image7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100vw;
+    font-family: "Abril Fatface";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .projects-heading-child {
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Abril Fatface";
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects-heading-child-child {
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Abril Fatface";
+    line-height: 0.5px;
+    margin-bottom: 15px;
+  }
+
+  .projects-heading-underline {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Cambria";
+  }
+}
+/* Projects Heading Mobile End*/
+
+/* Projects */
+@media screen and (min-width: 701px) {
+  .projects-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+  }
+  .projects {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .projects-container {
+    background-image: url("downloafw.jpg");
+    height: 45vh;
+    width: 54vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Poppins";
+  }
+
+  .projects-container:hover {
+    height: 45vh;
+    width: 54vh;
+    transform: scale(1.05);
+    opacity: 70%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Poppins";
+    font-weight: bold;
+  }
+
+  .projects11 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .projects12 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .projects21 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .projects22 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .projects31 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .projects32 {
+    background-image: url("downloafw.jpg");
+  }
+
+  #projects-list {
+    background-image: url("Rectangle 22.png");
+    height: 90vh;
+    width: 90vw;
+    margin-top: 10vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+    transition: height 0.4s ease-in-out;
+  }
+
+  .projects-list-more {
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-family: "Poppins";
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .project-list-element {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Poppins";
+    color: black;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .view-more {
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    font-family: "Poppins";
+    color: black;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .projects-list-list {
+    list-style-type: none;
+  }
+
+  .projects-container-last {
+    margin-left: 0;
+  }
+
+  .projects-container-last {
+    margin-right: 0;
+  }
+
+  .button {
+    background-color: white;
+    border: none;
+    color: black;
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+  }
+
+  .button:hover {
+    background-color: white;
+    opacity: 80%;
+    border: none;
+    color: black;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+  }
+
+  .button:active {
+    background-color: white;
+    opacity: 80%;
+    border: none;
+    color: black;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+  }
+}
+/* Projects End*/
+
+/* Projects Mobile*/
+@media screen and (max-width: 700px) {
+  .projects-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    flex-flow: column;
+  }
+  .projects {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .projects-container {
+    background-image: url("downloafw.jpg");
+    height: 22.5vh;
+    width: 27vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Poppins";
+  }
+
+  .projects-container:hover {
+    height: 45vh;
+    width: 54vh;
+    transform: scale(1.05);
+    opacity: 70%;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Poppins";
+    font-weight: bold;
+  }
+
+  .projects11 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .projects12 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .projects21 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .projects22 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .projects31 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .projects32 {
+    background-image: url("downloafw.jpg");
+  }
+
+  #projects-list {
+    background-image: url("Rectangle 22.png");
+    height: 70vh;
+    width: 100vw;
+    margin-top: 10vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+    transition: height 0.4s ease-in-out;
+  }
+
+  .projects-list-more {
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-family: "Poppins";
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .project-list-element {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Poppins";
+    color: black;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .view-more {
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    font-family: "Poppins";
+    color: black;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .projects-list-list {
+    list-style-type: none;
+  }
+
+  .projects-container-last {
+    margin-left: 0;
+  }
+
+  .projects-container-last {
+    margin-right: 0;
+  }
+
+  .button {
+    background-color: white;
+    border: none;
+    color: black;
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+  }
+
+  .button:hover {
+    background-color: white;
+    opacity: 80%;
+    border: none;
+    color: black;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+  }
+
+  .button:active {
+    background-color: white;
+    opacity: 80%;
+    border: none;
+    color: black;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+  }
+  
+}
+/* Projects Mobile End*/
+
+
+
+/*Carousel */
