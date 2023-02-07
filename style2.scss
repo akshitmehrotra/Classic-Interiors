@@ -1,98 +1,56 @@
 
-.brands-container {
-  max-width: 600px;
-  margin: auto;
-  padding:0 1em;
-  overflow: hidden;
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 }
 
-.brands-carousel {
-  position: relative;
-  padding-left: 0;
-  margin: 0;
-  height: 200px;
-  overflow: hidden;
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
 }
 
-.brands-carousel > div {
-  width: 100%;
-}
 
-.brands-carousel > picture {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  animation: carousel 15s linear infinite;
-  transform: translateX(100%);
-}
+// Styling
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 960px;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
 
-.brands-carousel > picture:nth-child(1) {
-  animation-name: first-picture, carousel;
-  animation-duration: 15s;
-  animation-iteration-count: 1, infinite;
-  animation-delay: 0s, 15s;
-  transform: translateX(0%);
-}
-.brands-carousel > picture:nth-child(2) {
-  animation-delay: Calc(15s * .33);
-}
-.brands-carousel > picture:nth-child(3) {
-  animation-delay: Calc(15s * .66);
-}
-
-@keyframes first-picture {
-  0% { transform: translateX(0%); }
-  7.5%, 33% { transform: translateX(0); }
-  40.5%, 100% { transform: translateX(-100%); }
-}
-
-@keyframes carousel {
-  0% { transform: translateX(100%); }
-  7.5%, 33% { transform: translateX(0); }
-  40.5%, 100% { transform: translateX(-100%); }
-}
-
-@keyframes first-picture-responsive {
-  0% { transform: translateX(0%); }
-  5.5%, 25% { transform: translateX(0); }
-  30.5%, 100% { transform: translateX(-100%); }
-}
-
-@keyframes carousel-responsive {
-  0% { transform: translateX(100%); }
-  5.5%, 25% { transform: translateX(0); }
-  30.5%, 100% { transform: translateX(-100%); }
-}
-
-.brands-carousel > picture:last-child {
-  display: none;
-}
-
-@media screen and (max-width: 766px) {
-  .brands-container {
-    max-width: 200px;
-  }
-  .brands-carousel > picture {
-    animation: carousel-responsive 20s linear infinite;
-  }
-
-  .brands-carousel > picture:nth-child(1) {
-    animation-name: first-picture-responsive, carousel-responsive;
-    animation-duration: 20s;
-    animation-iteration-count: 1, infinite;
-    animation-delay: 0s, 20s;
-  }
-
-  .brands-carousel > picture:nth-child(2) {
-    animation-delay: Calc(20s * .25);
-  }
-  .brands-carousel > picture:nth-child(3) {
-    animation-delay: Calc(20s * .50);
-  }
-  .brands-carousel > picture:nth-child(4) {
-    animation-delay: Calc(20s * .75);
-    display: block;
-  }
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
 }
