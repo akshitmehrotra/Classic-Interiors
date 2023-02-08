@@ -38,7 +38,7 @@ body {
 /* Main image end*/
 
 /* Countdown Desktop*/
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 821px) {
   .centered-num {
     background-image: url("image7.png");
     background-size: cover;
@@ -94,7 +94,7 @@ body {
 /* Countdown Desktop end*/
 
 /* Countdown Mobile*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 820px) {
   .centered-num {
     background-image: url("image7.png");
     background-size: cover;
@@ -150,7 +150,7 @@ body {
 /* Countdown Mobile end*/
 
 /* NAVIGATION */
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 821px) {
   #nav-background {
     position: fixed;
     top: 0;
@@ -175,7 +175,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 2vw;
-    margin-right: 15vw;
+    margin-right: 20vw;
   }
 
   #nav-logo {
@@ -221,7 +221,7 @@ body {
 /* END NAVIGATION */
 
 /* MOBILE MENU */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 820px) {
   #nav-container {
     flex-direction: column;
     text-align: center;
@@ -315,7 +315,7 @@ body {
 /* END MOBILE MENU */
 
 /* DESKTOP MENU */
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 821px) {
   #nav-menu-button {
     display: none;
   }
@@ -334,7 +334,7 @@ body {
 }
 
 /* Welcome Desktop*/
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 821px) {
   .welcomee {
     background-size: cover;
     background-repeat: no-repeat;
@@ -410,7 +410,7 @@ body {
 /* Welcome end*/
 
 /* Welcome Mobile*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 820px) {
   .welcomee {
     background-size: cover;
     background-repeat: no-repeat;
@@ -500,7 +500,7 @@ body {
 /* Welcome Mobile end*/
 
 /* Projects Heading*/
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 821px) {
   .projects-heading {
     background-image: url("image7.png");
     background-size: cover;
@@ -544,7 +544,7 @@ body {
 /* Projects Heading End*/
 
 /* Projects Heading Mobile */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 820px) {
   .projects-heading {
     background-image: url("image7.png");
     background-size: cover;
@@ -588,7 +588,7 @@ body {
 /* Projects Heading Mobile End*/
 
 /* Projects */
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 821px) {
   .projects-parent {
     display: flex;
     justify-content: center;
@@ -754,7 +754,10 @@ body {
 /* Projects End*/
 
 /* Projects Mobile*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 820px) {
+  .button{
+    visibility: hidden;
+  }
   .projects-parent {
     display: flex;
     justify-content: center;
@@ -924,7 +927,7 @@ body {
 
 
 /* Carousel */
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 821px) {
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -982,7 +985,7 @@ body {
 /* Carousel End*/
 
 /* Carousel Mobile */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 821px) {
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -1020,13 +1023,837 @@ body {
 
 
 /* Credits */
+@media screen and (min-width: 821px) {
 .credits{
   background-image: url('credits2.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 45vh;
   width: 100vw;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 5vh;
+  font-weight: 100;
 }
+
+.credits-info{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.credits-info-image{
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 10vh;
+  width: 25vw;
+}
+
+.credits-info-p{
+  text-align:left;
+  font-family: "Poppins";
+  font-size: 17px;
+  width: 30vw;
+  line-height: 28.27px;
+}
+
+.credits-link{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.credits-link-heading{
+  text-align:left;
+  font-family: "Poppins";
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.credits-link-link{
+  text-align:left;
+  font-family: "Poppins";
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.credits-link-link:hover{
+  text-align:left;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.credits-link{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.credits-contact-heading{
+  text-align:left;
+  font-family: "Poppins";
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.credits-contact-contact{
+  text-align:left;
+  font-family: "Poppins";
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.credits-contact-contact-image{
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.credits-contact-contact-image-1{
+  background-image: url('l1.png');
+}
+
+.credits-contact-contact-image-2{
+  background-image: url('l2.png');
+  
+}
+.credits-contact-contact-image-3{
+  background-image: url('l3.png');
+}
+
+.credits-contact-contact-text{
+  text-align:left;
+  font-family: "Poppins";
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+}
+/* Credits End */
+
+/* Credits Mobile */
+@media screen and (max-width: 820px) {
+  .credits{
+    background-image: url('credits2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 5vh;
+    font-weight: 100;
+  }
+  
+  .credits-info{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: none;
+  }
+  
+  .credits-info-image{
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 5vh;
+    width: 30vw;
+    margin-bottom: 10px;
+  }
+  
+  .credits-info-p{
+    text-align:left;
+    font-family: "Poppins";
+    font-size: 12px;
+    width: 35vw;
+    line-height: 14px;
+  }
+  
+  .credits-link{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .credits-link-heading{
+    text-align:left;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .credits-link-link{
+    text-align:left;
+    font-family: "Poppins";
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .credits-link-link:hover{
+    text-align:left;
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .credits-link{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .credits-contact-heading{
+    text-align:left;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .credits-contact-contact{
+    text-align:left;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .credits-contact-contact-image{
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25px;
+    width: 10px;
+    margin-right: 10px;
+  }
+  
+  .credits-contact-contact-image-1{
+    background-image: url('l1.png');
+  }
+  
+  .credits-contact-contact-image-2{
+    background-image: url('l2.png');
+    
+  }
+  .credits-contact-contact-image-3{
+    background-image: url('l3.png');
+  }
+  
+  .credits-contact-contact-text{
+    text-align:left;
+    font-family: "Poppins";
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  }
+
+
+
+
+
+
+
+  
+  @media screen and (min-width: 821px) {
+  /* About Image */
+  .about-image{
+    background-image: url('ab1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-family: "Abril Fatface";
+  }
+
+  .about-text{
+    height: 30vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Poppins";
+    margin: 0 auto
+  }
+
+  .leaders{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: "Poppins";
+  }
+  
+  .leaders-ind{
+    align-items: center;
+    height: 150vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .leaders-ind-child{
+    height: 130vh;
+    display: flex;
+    flex-flow: column ;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #232222;
+    border-radius: 70px;
+    padding: 0px 30px;
+  }
+
+  .leaders-ind-child1{
+    margin-right: 5vh;
+  }
+
+  .leaders-ind-child2{
+    margin-left: 5vh;
+  }
+
+  .leaders-ind-child-image{
+    background-image: url("image15.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+     width: 60vh;
+  }
+
+  .leaders-ind-child-text{
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .leaders-ind-child-text-1{
+    font-size: 40px;
+    font-family: "Poppins";
+  }
+
+  .leaders-ind-child-text-2{
+    text-align: justify;
+    font-size: 14px;
+    font-family: "Poppins";
+  }
+  /* About Image End*/
+
+  /*Clients*/
+  .clist{
+    display: flex;
+    justify-content: space-around;
+    text-align: justify; 
+    font-size: 24px; 
+    margin: 5vh 0;
+  }
+
+  .clist-child{
+    line-height: 1.7;
+    font-family: "Poppins";
+  }
+  /*Clients End*/
+
+  /*Contact Us*/
+  .contactus-image{
+    background-image: url('ab2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .contactus-image-heading{
+    font-size: 64px;
+    font-family: "Abril Fatface";
+    margin-bottom: 10vh;
+  }
+
+  .contactus-image-text{
+    margin-top: 10vh;
+    display: flex;
+    text-align: justify;
+    line-height: 18px;
+    font-weight: 24px;
+    height: 10vh;
+  }
+
+  .contactus-image-text-1{
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family: "Poppins";
+    margin-right: 1.25vw;
+    padding-right: 1.25vw;
+    border-right: 2px solid white;
+    border-color: white;
+  }
+
+  .contactus-image-text-2{
+    height: 20vh;
+    width: 17.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family: "Poppins";
+    margin-right: 1.25vw;
+    padding-right: 1.25vw;
+    border-right: 2px solid white;
+    border-color: white;
+  } 
+  
+  .contactus-image-text-3{
+    height: 20vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family: "Poppins";
+    margin-right: 1.25vw;
+    padding-right: 1.25vw;
+  }
+
+  .pprojects-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+  }
+  .pprojects {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .pprojects-container {
+    background-image: url("downloafw.jpg");
+    height: 50vh;
+    width: 60vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Poppins";
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pprojects-container:hover {
+    height: 50vh;
+    width: 60vh;
+    transform: scale(1.05);
+    opacity: 70%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Poppins";
+    font-weight: bold;
+  }
+
+  .pprojects-link{
+    font-family: "Poppins";
+    color: white;
+  }
+
+  .pprojects-link:hover{
+    font-family: "Poppins";
+    color: white;
+  }
+
+  .pprojects-link:visited,.pprojects-link:active{
+    font-family: "Poppins";
+    font-weight: bold;
+    color: white;
+  }
+  /* Contact Us End*/
+  }
+
+
+
+
+
+
+
+/* ___________________________$$
+ _________________________$$$$
+ _______________________$$$$$$
+ ______________________$$$$$$
+ ______________________$$$$
+ ______________________$$
+ _________$$$$$$$$$$$$$_$$$$$$$$$$$$$
+ ______$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ ____$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ ___$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ __$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ _$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ _$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ _$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ _$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ __$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ ___$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ ____$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ _____$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ ______$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ ________$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ __________$$$$$$$$$$$$$$$$$$$$$$$$$
+ ____________$$$$$$$$$$$$$$$$$$$$$
+ ______________$$$$$$$$__$$$$$$$
+*/
+
+
+
+  @media screen and (max-width: 820px) {
+    /* About Image */
+    .about-image{
+      background-image: url('ab1.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 40vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      font-family: "Abril Fatface";
+    }
+
+    .about-text{
+      height: 25vh;
+      width: 70vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 12px;
+      font-family: "Poppins";
+      margin: 0 auto
+    }
+
+    .leaders{
+      height: 10vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-family: "Poppins";
+    }
+
+    .leaders-ind{
+      align-items: center;
+      height: 155vh;
+      width: 100vw;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .leaders-ind-child{
+      height: 70vh;
+      display: flex;
+      flex-flow: column ;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #232222;
+      border-radius: 35px;
+      padding: 0px 30px;
+    }
+  
+    .leaders-ind-child1{
+      margin-bottom: 5vh;
+    }
+  
+    .leaders-ind-child-image{
+      background-image: url("image15.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 30vh;
+       width: 30vh;
+    }
+  
+    .leaders-ind-child-text{
+      height: 30vh;
+      width: 30vh;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  
+    .leaders-ind-child-text-1{
+      font-size: 20px;
+      font-family: "Poppins";
+    }
+  
+    .leaders-ind-child-text-2{
+      text-align: justify;
+      font-size: 7px;
+      font-family: "Poppins";
+    }
+    /* About Image End*/
+    /* Clients */
+    .clist{
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      text-align: justify; 
+      font-size: 14px; 
+      margin-bottom: 5vh;
+    }
+  
+    .clist-child{
+      line-height: 1.7;
+      font-family: "Poppins";
+      margin-left: 20vw;
+    }
+    /*Clients End*/
+
+    /*Contact Us*/
+  .contactus-image{
+    background-image: url('ab2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .contactus-image-heading{
+    font-size: 32px;
+    font-family: "Abril Fatface";
+    margin-bottom: 5vh;
+  }
+
+  .contactus-image-text{
+    margin-top: 5vh;
+    display: flex;
+    text-align: justify;
+    line-height: 20px;
+    font-weight: 12px;
+    height: 5vh;
+    font-size: 16px;
+    flex-flow: column;
+  }
+
+  .contactus-image-text-1{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family: "Poppins";
+    border-bottom: 2px solid white;
+    border-color: white;
+    margin-bottom: 2.5vh;
+    padding-bottom: 2.5vh;
+  }
+
+  .contactus-image-text-2{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family: "Poppins";
+    margin-bottom: 2.5vh;
+    padding-bottom: 2.5vh;
+    border-bottom: 2px solid white;
+    border-color: white;
+    margin-bottom: 10px;
+  } 
+  
+  .contactus-image-text-3{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-family: "Poppins";
+    margin-right: 1.25vw;
+    padding-right: 1.25vw;
+  }
+  /* Contact Us End*/
+
+  .pprojects-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    flex-flow: column;
+  }
+  .pprojects {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .pprojects-container {
+    background-image: url("downloafw.jpg");
+    height: 22.5vh;
+    width: 27vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Poppins";
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .pprojects-container:hover {
+    height: 45vh;
+    width: 54vh;
+    transform: scale(1.05);
+    opacity: 70%;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Poppins";
+    font-weight: bold;
+  }
+
+  .pprojects-link{
+    font-family: "Poppins";
+  }
+
+  .pprojects-link:hover{
+    font-family: "Poppins";
+    text-decoration: underline;
+  }
+
+  .pprojects-link:visited,.pprojects-link:active{
+    font-family: "Poppins";
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  }
+
+
+/*
+___¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+__¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+_¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶
+88888888888888888888888888888
+8_____8_____8_____8_____8___8
+88___888___888___888___888__8
+888_88888_88888_88888_88888_8
+88888888888888888888888888888
+888_88888_88888_88888_88888_8
+88___888___888___888___888__88888888
+8_____8_____8_____8_____8___888888888
+88___888___888___888___888__8888888888
+888_88888_88888_88888_88888_8_____88888
+88888888888888888888888888888______88888
+888_88888_88888_88888_88888_8_______88888
+88___888___888___888___888__8________88888
+8_____8_____8_____8_____8___8_________88888
+88___888___888___888___888__8_________88888
+888_88888_88888_88888_88888_8_________88888
+888_88888_88888_88888_88888_8_________88888
+88___888___888___888___888__8_________88888
+8_____8_____8_____8_____8___8_________88888
+88___888___888___888___888__8________88888
+888_88888_88888_88888_88888_8_______88888
+88888888888888888888888888888______88888
+888_88888_88888_88888_88888_8_____88888
+88___888___888___888___888__8888888888
+8_____8_____8_____8_____8___888888888
+88___888___888___888___888__88888888
+888_88888_88888_88888_88888_8
+88888888888888888888888888888
+888_88888_88888_88888_88888_8
+88___888___888___888___888__8
+8_____8_____8_____8_____8___8
+88888888888888888888888888888
+*/
+
+.pprojects11 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .pprojects12 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .pprojects13 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .pprojects21 {
+    background-image: url("image15.png");
+  }
+
+  .pprojects22 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .pprojects23 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .pprojects31 {
+    background-image: url("image15.png");
+  }
+
+  .pprojects32 {
+    background-image: url("downloafw.jpg");
+  }
+
+  .pprojects33{
+    background-image: url("downloafw.jpg");
+  }
+  
