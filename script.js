@@ -119,7 +119,7 @@ function SwapDivsWithClick() {
     document.getElementById("projects1").style.display = "none";
     document.getElementById("projects-list").style.display = "block";
     document.getElementById("projects-list").style.transition = "opacity 2s linear";
-    document.getElementById("button").style.transform = "rotate(180deg)";
+    document.getElementById("button").innerHTML = "<"
     i++;
   }
   else
@@ -127,7 +127,7 @@ function SwapDivsWithClick() {
     document.getElementById("projects-list").style.display = "none";
     document.getElementById("projects1").style.display = "block";
     document.getElementById("projects1").style.transition = "opacity 2s linear";
-    document.getElementById("button").style.transform = "rotate(360deg)";
+    document.getElementById("button").innerHTML = ">"
     i++;
   }
 }
